@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <script type="text/javascript" src="./index.js"></script>
+    <div class="container" id="currentHour"></div>
+    <div class="container">
+        <p></p>
+        <form name="frequencyForm">
+            <div class="frequency">
+                <label for="name">Choose refresh frequency you want (1 - 60 sec): </label><br>
+                <input type="number" name="frequency" id="frequency" min="1" max="60">
+            </div>
+            <div>
+                <input type="button" onclick="changeFrequency()" value="Change frequency"><br>
+            </div>
+        </form>
+        <input type="button" onclick="startStop()" value="Start / Stop">
+    </div>
+</body>
+
+</html>
